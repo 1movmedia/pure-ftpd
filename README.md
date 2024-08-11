@@ -33,7 +33,7 @@ Automatically built by Github Actions
 #### Compose example:
 
     pure-ftpd:
-      context: https://github.com/1movmedia/pure-ftpd
+      context: https://github.com/1movmedia/pure-ftpd.git
       image: pure-ftpd
       container_name: pure-ftpd
       ports:
