@@ -26,14 +26,15 @@ Automatically built by Github Actions
         -p 30000-30009:30000-30009 \
         -v $(pwd)/pureftpd:/etc/pureftpd \
         -v /your/data:/home/ftpuser \
-        gists/pure-ftpd
+        pure-ftpd
 
 **since docker version 1.5 ports can be exported in range**
 
 #### Compose example:
 
     pure-ftpd:
-      image: gists/pure-ftpd
+      context: https://github.com/1movmedia/pure-ftpd
+      image: pure-ftpd
       container_name: pure-ftpd
       ports:
         - "21:21"
